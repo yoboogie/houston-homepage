@@ -1,0 +1,176 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+* {
+    margin: 0;
+}
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+.hero {
+    background-image: url(/images/houston.jpg);
+    height: 850px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    gap: 16px;
+    
+}
+
+.hero-title {
+    font-size: 64px;
+    background: #585123;
+    padding: 3px 12px 5px 12px;
+    border-radius: 10px;
+}
+
+.hero-subtitle {
+    background: #F2A65A;
+    font-size: 38px;
+    padding: 5px 28px;
+    width: 800px;
+    border-radius: 10px;
+}
+
+.activities {
+    height: 850px;
+    background: #EEC170;
+}
+
+.activity-title {
+    padding: 80px;
+    color: #585123;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.active-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    width: 400px;
+    padding: 5px;
+}
+
+.photo {
+    border-radius: 50%;
+}
+
+.activity {
+    font-size: 32px;
+    color: #585123;
+}
+
+.caption {
+    font-size: 32px;
+    font-weight: 400px;
+    color: #585123;
+}
+
+.card-container {
+    height: 850px;
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+    padding: 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background: #F2A65A;
+    color: #585123;
+    border-bottom: 10px solid #585123; 
+    border-radius: 10px;
+    align-items: center;
+    padding: 0px 25px 0px 50px;
+
+}
+
+
+img {
+    transition: transform 0.1s ease-out;
+}
+
+.avatar {
+    width: 360px;
+    height: 500px;
+    
+    border-radius: 10px;
+}
+
+.avatar:hover {
+    animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden; 
+    perspective: 1000px; 
+    
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.text {
+    color: #585123;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content: space-around;
+    align-items: center;
+}
+.card-title {
+    font-size: 48px;
+}
+
+.testimonial {
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 400px;
+}
+
+.person {
+    font-size: 32px;
+}
